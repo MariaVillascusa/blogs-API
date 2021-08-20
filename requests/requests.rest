@@ -32,3 +32,14 @@ content-type: application/json
     "url": "lsdkfhdslkd",
     "likes": 120
 }
+
+###
+POST http://localhost:3003/api/blogs
+content-type: application/json
+
+{
+    "title": "You are enough",
+    "author": "Zox",
+    "url": "dsdfiodfmri",
+    "likes": 40
+}
