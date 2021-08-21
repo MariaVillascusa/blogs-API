@@ -12,7 +12,7 @@ module.exports = {
     ecmaVersion: 12
   },
   rules: {
-    indent: ['error', 4],
+    'indent': ['error', 4],
     'no-trailing-spaces': 'error',
     'object-curly-spacing': [
       'error', 'always'
@@ -20,6 +20,7 @@ module.exports = {
     'arrow-spacing': [
       'error',
       { before: true, after: true }
-    ]
+    ],
+    
   }
 }
