@@ -82,12 +82,33 @@ const mostBlogs = blogs => {
         return result
     })
     let maxAuthor = {}
-    result.map(author => {
-        const maxBlogs = (Math.max(author.blogs))
-        maxAuthor = result.filter(author => author.blogs === maxBlogs)[0]
-        return maxAuthor
-    })
+    const blogsArray = result.map(author => author.blogs)
+    const maxBlogs = Math.max(...blogsArray)
+    maxAuthor = result.filter(author => author.blogs === maxBlogs)[0]
     return maxAuthor
 }
 
-module.exports = { blogs, dummy, totalLikes, favoriteBlog, mostBlogs }
+const mostLikes = blogs => {
+    const result = []
+    const authors = _.groupBy(blogs, 'author')
+    const articles = Array.from(Object.keys(authors))
+    articles.map(name => {
+        const authorObj = {}
+        let quantity = 0
+        const number = blogs.map((b) => {
+            if (b.author === name) { quantity += Number(b.likes) }
+            return quantity
+        })
+        authorObj.author = name
+        authorObj.likes = number[number.length - 1]
+        result.push(authorObj)
+        return result
+    })
+    let maxLikesWithAutor = {}
+    const likes = result.map(author => (author.likes))
+    const maxLikes = (Math.max(...likes))
+    maxLikesWithAutor = result.filter(author => author.likes === maxLikes)[0]
+    return maxLikesWithAutor
+}
+
+module.exports = { blogs, dummy, totalLikes, favoriteBlog, mostBlogs, mostLikes }
