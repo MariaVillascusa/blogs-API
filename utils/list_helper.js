@@ -1,3 +1,5 @@
+const _ = require('lodash')
+
 const blogs = [
     {
         _id: '5a422a851b54a676234d17f7',
@@ -44,7 +46,7 @@ const blogs = [
         title: 'Type wars',
         author: 'Robert C. Martin',
         url: 'http://blog.cleancoder.com/uncle-bob/2016/05/01/TypeWars.html',
-        likes: 2,
+        likes: 3,
         __v: 0
     }
 ]
@@ -63,4 +65,29 @@ const favoriteBlog = blogs => {
     return favorite
 }
 
-module.exports = { blogs, dummy, totalLikes, favoriteBlog }
+const mostBlogs = blogs => {
+    const result = []
+    const authors = _.groupBy(blogs, 'author')
+    const articles = Array.from(Object.keys(authors))
+    articles.map(name => {
+        const authorObj = {}
+        let quantity = 0
+        const number = blogs.map((b) => {
+            if (b.author === name) { quantity += 1 }
+            return quantity
+        })
+        authorObj.author = name
+        authorObj.blogs = number[number.length - 1]
+        result.push(authorObj)
+        return result
+    })
+    let maxAuthor = {}
+    result.map(author => {
+        const maxBlogs = (Math.max(author.blogs))
+        maxAuthor = result.filter(author => author.blogs === maxBlogs)[0]
+        return maxAuthor
+    })
+    return maxAuthor
+}
+
+module.exports = { blogs, dummy, totalLikes, favoriteBlog, mostBlogs }

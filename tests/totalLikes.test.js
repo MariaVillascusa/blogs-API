@@ -19,6 +19,6 @@ describe('total likes', () => {
     })
     test('of blogs return 36', () => {
         const result = totalLikes(blogs)
-        expect(result).toBe(36)
+        expect(result).toBe(37)
     })
 })
