@@ -42,3 +42,12 @@ content-type: application/json
     "url": "dsdfiodfmri",
     "likes": 40
 }
+###
+
+POST http://localhost:3003/api/blogs
+content-type: application/json
+
+{
+    "url": "sdfmdlskfsdlf",
+    "likes": 100
+}
