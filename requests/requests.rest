@@ -60,7 +60,7 @@ content-type: application/json
 
 {
     "title": "Zombie",
-    "author": "Miley Cyrus",
+    "author": "Miley",
     "url": "lsdkfhdslkd",
     "likes": 120
 }
