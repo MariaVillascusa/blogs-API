@@ -51,3 +51,16 @@ content-type: application/json
     "url": "sdfmdlskfsdlf",
     "likes": 100
 }
+###
+DELETE http://localhost:3003/api/blogs/611fb825d9e12c0c67387126
+
+###
+PUT http://localhost:3003/api/blogs/611ee52973200f0b2859da34
+content-type: application/json
+
+{
+    "title": "Zombie",
+    "author": "Miley Cyrus",
+    "url": "lsdkfhdslkd",
+    "likes": 120
+}
