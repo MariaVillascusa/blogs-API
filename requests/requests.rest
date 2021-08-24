@@ -19,8 +19,7 @@ content-type: application/json
 {
     "title": "We could be heroes",
     "author": "David Bowie",
-    "url": "sdfmdlskfsdlf",
-    "likes": 300
+    "url": "sdfmdlskfsdlf"
 }
 ###
 POST http://localhost:3003/api/blogs
