@@ -9,9 +9,10 @@ content-type: application/json
     "title": "One more time",
     "author": "Britney Spears",
     "url": "sdfmdlskfsdlf",
-    "likes": 100
-}
+    "likes": 100,
+    "user": "612a1be892e540015e74fd5d"
 
+}
 ###
 POST http://localhost:3003/api/blogs
 content-type: application/json
@@ -19,7 +20,8 @@ content-type: application/json
 {
     "title": "We could be heroes",
     "author": "David Bowie",
-    "url": "sdfmdlskfsdlf"
+    "url": "sdfmdlskfsdlf",
+    "user": "612a20e1d5f8850bdffbc49b"
 }
 ###
 POST http://localhost:3003/api/blogs
@@ -29,7 +31,9 @@ content-type: application/json
     "title": "Zombie",
     "author": "Cranberries",
     "url": "lsdkfhdslkd",
-    "likes": 120
+    "likes": 120,
+    "user": "612a20e1d5f8850bdffbc49b"
+
 }
 
 ###
@@ -40,7 +44,9 @@ content-type: application/json
     "title": "You are enough",
     "author": "Zox",
     "url": "dsdfiodfmri",
-    "likes": 40
+    "likes": 40,
+    "user": "612a1be892e540015e74fd5d"
+
 }
 ###
 
@@ -62,5 +68,6 @@ content-type: application/json
     "title": "Zombie",
     "author": "Miley",
     "url": "lsdkfhdslkd",
-    "likes": 120
+    "likes": 120,
+    "user":"612a20e1d5f8850bdffbc49b"
 }
