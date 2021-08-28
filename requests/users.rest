@@ -16,3 +16,24 @@ content-type: application/json
     "name": "John Smith",
     "password": "pass0000"
 }
+###
+
+POST http://localhost:3003/api/users
+content-type: application/json
+
+{
+    "username": "dev2",
+    "name": "John Smith",
+    "password": "password"
+}
+
+###
+
+POST http://localhost:3003/api/users
+content-type: application/json
+
+{
+    "username": "de",
+    "name": "Audry Stan",
+    "password": "password"
+}
