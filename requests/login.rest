@@ -10,6 +10,14 @@ POST http://localhost:3003/api/login
 content-type: application/json
 
 {
+    "username": "dev1",
+    "password": "pass0000"    
+}
+###
+POST http://localhost:3003/api/login
+content-type: application/json
+
+{
     "username": "dev2",
     "password": "incorrectPassword"    
 }

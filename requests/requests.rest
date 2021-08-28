@@ -4,18 +4,18 @@ GET http://localhost:3003/api/blogs
 
 POST http://localhost:3003/api/blogs
 content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRldjIiLCJpZCI6IjYxMmEzM2RhYzc3ZDkyMjM4ODIwMTAyOSIsImlhdCI6MTYzMDE2Mjk4OH0.881-1YNSxDEGCqH-aosRT2YUrX4VAC50paxpmfzSI_s
 
 {
     "title": "One more time",
     "author": "Britney Spears",
     "url": "sdfmdlskfsdlf",
-    "likes": 100,
-    "user": "612a1be892e540015e74fd5d"
-
+    "likes": 100
 }
 ###
 POST http://localhost:3003/api/blogs
 content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRldjEiLCJpZCI6IjYxMmEyMGUxZDVmODg1MGJkZmZiYzQ5YiIsImlhdCI6MTYzMDE2NTgxMX0.Zv_eGFeBHc9pWrw_YmMOYI30thoI5eVl50XuwOpMvqo
 
 {
     "title": "We could be heroes",
@@ -26,19 +26,20 @@ content-type: application/json
 ###
 POST http://localhost:3003/api/blogs
 content-type: application/json
+Authorization: bearer eYJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRldjEiLCJpZCI6IjYxMmEyMGUxZDVmODg1MGJkZmZiYzQ5YiIsImlhdCI6MTYzMDE2NTgxMX0.Zv_eGFeBHc9pWrw_YmMOYI30thoI5eVl50XuwOpMvqo
 
 {
     "title": "Zombie",
     "author": "Cranberries",
     "url": "lsdkfhdslkd",
     "likes": 120,
-    "user": "612a20e1d5f8850bdffbc49b"
 
 }
 
 ###
 POST http://localhost:3003/api/blogs
 content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRldjIiLCJpZCI6IjYxMmEzM2RhYzc3ZDkyMjM4ODIwMTAyOSIsImlhdCI6MTYzMDE2Mjk4OH0.881-1YNSxDEGCqH-aosRT2YUrX4VAC50paxpmfzSI_s
 
 {
     "title": "You are enough",
@@ -63,6 +64,7 @@ DELETE http://localhost:3003/api/blogs/611fb825d9e12c0c67387126
 ###
 PUT http://localhost:3003/api/blogs/611ee52973200f0b2859da34
 content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRldjIiLCJpZCI6IjYxMmEzM2RhYzc3ZDkyMjM4ODIwMTAyOSIsImlhdCI6MTYzMDE2Mjk4OH0.881-1YNSxDEGCqH-aosRT2YUrX4VAC50paxpmfzSI_s
 
 {
     "title": "Zombie",
