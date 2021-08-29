@@ -45,9 +45,18 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRld
     "title": "You are enough",
     "author": "Zox",
     "url": "dsdfiodfmri",
-    "likes": 40,
-    "user": "612a1be892e540015e74fd5d"
+    "likes": 40
+}
+###
+POST http://localhost:3003/api/blogs
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRldjIiLCJpZCI6IjYxMmEzM2RhYzc3ZDkyMjM4ODIwMTAyOSIsImlhdCI6MTYzMDE2Mjk4OH0.881-1YNSxDEGCqH-aosRT2YUrX4VAC50paxpmfzSI_s
 
+{
+    "title": "Free your mind",
+    "author": "Natalie Ambrossi",
+    "url": "dsdfdfdsfretreiodfmri",
+    "likes": 60
 }
 ###
 
