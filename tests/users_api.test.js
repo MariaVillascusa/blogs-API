@@ -44,7 +44,7 @@ describe('when there is initially one user in db', () => {
         const result = await api
             .post('/api/users')
             .send(newUser)
-            .expect(400)
+            .expect(409)
         expect(result.body.error).toContain('`username` is required')
         const usersAtEnd = await usersInDB()
         expect(usersAtEnd).toHaveLength(usersAtStart.length)
@@ -59,7 +59,7 @@ describe('when there is initially one user in db', () => {
         const result = await api
             .post('/api/users')
             .send(newUser)
-            .expect(400)
+            .expect(409)
         expect(result.body.error).toContain('password is required')
         const usersAtEnd = await usersInDB()
         expect(usersAtEnd).toHaveLength(usersAtStart.length)
@@ -77,7 +77,7 @@ describe('when there is initially one user in db', () => {
         const result = await api
             .post('/api/users')
             .send(newUser)
-            .expect(400)
+            .expect(409)
         expect(result.body.error).toContain('`username` to be unique')
         const usersAtEnd = await usersInDB()
         expect(usersAtEnd).toHaveLength(usersAtStart.length)
@@ -95,7 +95,7 @@ describe('when there is initially one user in db', () => {
         const result = await api
             .post('/api/users')
             .send(newUser)
-            .expect(400)
+            .expect(409)
         expect(result.body.error).toContain('is shorter than the minimum allowed length (3)')
         const usersAtEnd = await usersInDB()
         expect(usersAtEnd).toHaveLength(usersAtStart.length)
@@ -113,7 +113,7 @@ describe('when there is initially one user in db', () => {
         const result = await api
             .post('/api/users')
             .send(newUser)
-            .expect(400)
+            .expect(409)
         expect(result.body.error).toContain('password must be at least 3 characters')
         const usersAtEnd = await usersInDB()
         expect(usersAtEnd).toHaveLength(usersAtStart.length)
